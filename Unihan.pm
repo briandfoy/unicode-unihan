@@ -62,7 +62,7 @@ sub AUTOLOAD {
     $name =~ s/.*:://o;
     $self->load($name);
     no strict 'refs';
-    *$AUTOLOAD = sub { 
+    *$AUTOLOAD = sub {
 	my $self = shift; @_ or return;
 	my $str = shift;  length($str) or return;
 	if (wantarray){
@@ -170,7 +170,7 @@ Unicode, Inc.
 Copyright 2002-2008 by Dan Kogai, All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself. 
+it under the same terms as Perl itself.
 
 =item of the Source Data
 

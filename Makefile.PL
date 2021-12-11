@@ -13,18 +13,13 @@ $PM->{$PMFILE} = "\$(INST_LIBDIR)/$PMFILE";
 print "done.\n";
 print "=" x 64, "\n";
 
-WriteMakefile
-    (
-     'NAME'		=> $PMNAME,
-     'VERSION_FROM'	=> $PMFILE,
-     'PREREQ_PM'	=> {}, 
-     'PM'               => $PM,
-
-     ($] >= 5.005 ?
-      (
-       ABSTRACT_FROM    => $PMFILE, # retrieve abstract from module
-       AUTHOR           => 'Dan Kogai <dankogai@dan.co.jp>',
-      ) : ()),
+WriteMakefile(
+	'NAME'          => $PMNAME,
+	'VERSION_FROM'  => $PMFILE,
+	'PREREQ_PM'     => {},
+	'PM'            => $PM,
+	'ABSTRACT_FROM' => $PMFILE,
+	'AUTHOR'        => 'Dan Kogai <dankogai@dan.co.jp>',
 );
 
 sub mkdbm{

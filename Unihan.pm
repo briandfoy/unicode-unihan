@@ -104,7 +104,7 @@ shown in the SYNOPSIS above.
 The first thing you do is make the database available.  Just say
 
   use Unicode::Unihan;
-  my $uh = new Unicode::Unihan;
+  my $uh = Unicode::Unihan->new;
 
 That's all you have to say.  After that, you can access the database
 via $uh-E<gt>I<tag>($string) where I<tag> is the tag in the Unihan

@@ -1,6 +1,7 @@
 use strict;
 use 5.006;
 use ExtUtils::MakeMaker;
+use File::Basename qw(basename);
 
 print "=" x 64, "\n";
 print "Preprocessing source text\n";

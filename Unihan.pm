@@ -29,7 +29,9 @@ sub load($$){
     }
     unless ( $self->{$name} ){
 	my $file = $self->{_dir_} . "/$name.db";
-	-f $file or croak "There is no DB for $name";
+	# SDBM files attach a .dir and .pag (two files), so allow for
+	# that secret .dir at the end
+	(-f $file or -f "$file.dir") or croak "There is no DB for $name";
 	tie %{$self->{$name}}, 'AnyDBM_File', $file, O_RDONLY, 0444
             or die "$file: $!";
     }

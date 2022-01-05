@@ -8,7 +8,7 @@ print "Preprocessing source text\n";
 
 my $PM = mkdbm("srctxt", "db");
 my $PMNAME = "Unicode::Unihan";
-my $PMFILE = "Unihan.pm";
+my $PMFILE = "lib/Unicode/Unihan.pm";
 $PM->{$PMFILE} = "\$(INST_LIBDIR)/$PMFILE";
 
 print "done.\n";

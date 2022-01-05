@@ -163,6 +163,9 @@ Unicode, Inc.
 
 =head1 COPYRIGHT AND LICENSE
 
+This module is currently maintained by brian d foy (C<bdfoy@cpan.org>)
+for legacy applications.
+
 =over 2
 
 =item of the Module

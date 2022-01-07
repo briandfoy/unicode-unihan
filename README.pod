@@ -17,8 +17,11 @@
 =head1 The Unicode::Unihan module
 
 This is the I<README> for the L<Unicode::Unihan> Perl module, which is
-provided for legacy support only. If you'd like to maintain this module,
-raise an issue asking to take it over.
+provided for legacy support only. This module was authored by Dan Kogai
+but is now maintained in legacy mode by brian d foy. Let's say "legacy"
+one more time: "legacy".
+
+If you'd like to maintain this legacy module, raise an issue asking to take it over.
 
 =head2 Documentation
 

@@ -117,7 +117,7 @@ sub do_it {
 	print "done.\n";
 	print "=" x 64, "\n";
 
-	$arguments->{PM}{$main_file} = catfile( '$(INST_LIBDIR)', split /::/, "$module.pm" );;
+	$arguments->{PM}{$main_file} = catfile( '$(INST_LIB)', split /::/, "$module.pm" );;
 
 
 	WriteMakefile( %$arguments );

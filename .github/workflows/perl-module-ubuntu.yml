@@ -108,6 +108,8 @@ jobs:
 # The Coveralls.io key can be kept in the COVERALLS_REPO_TOKEN secret
             - name: Run coverage tests
               if: env.PERL_VERSION != 'v5.8'
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
                 cpan -M https://www.cpan.org -T Devel::Cover Devel::Cover::Report::Coveralls
                 cover -test -report coveralls

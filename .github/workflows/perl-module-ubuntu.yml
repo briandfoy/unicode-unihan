@@ -73,7 +73,7 @@ jobs:
             - name: Install cpanm and multiple modules
               run: |
                 curl -L https://cpanmin.us | perl - App::cpanminus
-                cpanm --notest IO::Socket::SSL App::Cpan ExtUtils::MakeMaker LWP LWP::Protocol::https
+                cpanm --notest IO::Socket::SSL App::Cpan ExtUtils::MakeMaker HTTP::Tiny
                 cpan -M https://www.cpan.org -T ExtUtils::MakeMaker
 # Install the dependencies, again not testing them. This installs the
 # module in the current directory, so we end up installing the module,
@@ -111,5 +111,6 @@ jobs:
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
+                perl -MHTTP::Tiny -e 'my($ok,$why)=HTTP::Tiny->can_ssl; print !!$ok . qq( $why);'
                 cpan -M https://www.cpan.org -T Devel::Cover Devel::Cover::Report::Coveralls
                 cover -test -report coveralls

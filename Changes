@@ -3,6 +3,11 @@
 # $Id: Changes,v 0.4 2008/06/11 14:40:27 dankogai Exp $
 #
 
+0.042_01 2022-01-08T00:02:10Z
+	Legacy release: this merely updates the module to work with 
+	Unicode::Tussle. Don't start using this module to do new 
+	work. Or, if you want it, volunteer to maintain it!
+
 $Revision: 0.4 $ $Date: 2008/06/11 14:40:27 $
 ! Unihan.pm
   POD streamlined.

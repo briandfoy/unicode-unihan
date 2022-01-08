@@ -76,7 +76,6 @@ jobs:
                 perl Makefile.PL
                 make disttest
 # And, coverage reports
-# The Coveralls.io key can be kept in the COVERALLS_REPO_TOKEN secret
             - name: Run coverage tests
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

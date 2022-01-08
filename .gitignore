@@ -36,3 +36,4 @@ inc/
 
 /db/
 *.bak
+Unicode-*

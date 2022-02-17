@@ -1,5 +1,8 @@
 # Revision history for Perl extension Unicode::Unihan.
 
+0.042_02 2022-02-17T16:04:20Z
+	* Final check before a user release
+
 0.042_01 2022-01-08T00:02:10Z
 	* Legacy release: this merely updates the module to work with
 	Unicode::Tussle. Don't start using this module to do new

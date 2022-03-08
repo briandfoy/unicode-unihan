@@ -1,5 +1,12 @@
 # Revision history for Perl extension Unicode::Unihan.
 
+0.043 2022-03-08T01:18:31Z
+	* Makefile.PL is more careful about the DBM files it creates. This
+	responds to GitHub #2, and RT-125349 and RT-75802.
+	* brian d foy (bdfoy@cpan.org) is the new maintainer, but he knows
+	nothing about Unihan. If you think you an modernize this module,
+	please take it over (see https://github.com/briandfoy/unicode-unihan/issues/1)
+
 0.042_02 2022-02-17T16:04:20Z
 	* Final check before a user release
 

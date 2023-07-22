@@ -1,7 +1,7 @@
-use strict;
-use Test::More tests => 2;
+use Test::More;
 
-use_ok('Unicode::Unihan');
-is(ref(Unicode::Unihan->new) => 'Unicode::Unihan', 'class');
+my $class = 'Unicode::Unihan';
+use_ok( $class );
+isa_ok( $class->new, $class );
 
-__END__
+done_testing();

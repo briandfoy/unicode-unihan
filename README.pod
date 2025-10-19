@@ -21,6 +21,9 @@ provided for legacy support only. This module was authored by Dan Kogai
 but is now maintained in legacy mode by brian d foy. Let's say "legacy"
 one more time: "legacy".
 
+If you can contribute changes, I can merge them, but I don't understand any of
+this so I can't help. I've never even used this module.
+
 If you'd like to maintain this legacy module, raise an issue asking to take it over.
 
 =head2 Documentation

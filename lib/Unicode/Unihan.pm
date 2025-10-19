@@ -143,7 +143,7 @@ the value field, see L<http://www.unicode.org/reports/tr38/>.
 
 =item L<perlunicode>
 
-=item The Unihand Database
+=item The Unihan Database
 
 L<http://www.unicode.org/Public/UNIDATA/Unihan.html>
 
